@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.imgContainer {
+    width: 45%;
+
+    padding: 0 20px;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 40px;
+
+    width: 45%;
+
+    padding: 0px 40px;
+
+    color: #ffffff;
+}
+
+.textContainer ol {
+    list-style-type: none;
+}
+
+.smallContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 20px;
+}
+
+.phoneNumber {
+    position: relative;
+
+    border-bottom: 1px dashed #B36800;
+    
+    color: #B36800;
+}

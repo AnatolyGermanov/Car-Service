@@ -1,0 +1,12 @@
+.orangeButton {
+    padding: 10px 20px;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: #b36800;
+
+    color: #ffffff;
+
+    cursor: pointer;
+}

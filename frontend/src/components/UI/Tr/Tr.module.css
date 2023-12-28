@@ -1,0 +1,14 @@
+.tr {
+    border-bottom: 2px solid #1f1f1f;
+
+    background: #2F2F2F;
+}
+
+.tr:not(:has(th)):hover {
+    background-color: #007DB3;
+}
+
+.tr:has(th) {
+    background: none;
+}
+

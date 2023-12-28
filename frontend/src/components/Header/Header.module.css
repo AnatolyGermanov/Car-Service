@@ -1,0 +1,42 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: 100px;
+
+    padding: 0 40px;
+
+
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    height: 60px;
+
+    color: #b36800;
+}
+
+.logoContainer > img {
+    height: 100%;
+}
+
+.navbarContainer {
+    display: flex;
+    align-items: center;
+
+    gap: 40px;
+}
+
+.phoneNumber {
+    position: relative;
+
+    border-bottom: 1px dashed #B36800;
+    
+    color: #B36800;
+}

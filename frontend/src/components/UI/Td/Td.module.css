@@ -1,0 +1,33 @@
+.td {
+    padding: 5px 2px;
+
+    color: #fff;
+    font-size: 14px;
+}
+
+.td.dianostic {
+    color: #007DB3;
+}
+
+.td.agreement {
+    color: #F3AB00;
+
+    animation: agreementFlashing 5s linear infinite ;
+}
+
+@keyframes agreementFlashing {
+    0% {
+        color: #F3AB00;
+    }
+    100% {
+        color: #fff;
+    }
+}
+
+.td.execution {
+    color: #B36800;
+}
+
+.td.complete {
+    color: #00B307;
+}

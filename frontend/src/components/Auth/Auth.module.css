@@ -1,0 +1,46 @@
+.auth {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    gap: 20px;
+
+    padding: 20px;
+
+    background-color: #1f1f1f;
+}
+
+.authHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+}
+
+.authHeader span {
+    color: #B36800;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.authHeader img {
+    cursor: pointer;
+}
+
+.button {
+    padding: 10px 20px;
+
+    border: none;
+
+    background-color: #333;
+
+    color: #ffffff;
+    font-weight: 500;
+
+    cursor: pointer;
+}
+
+.button.active {
+    background-color: #636363;
+}

@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+
+    width: 100%;
+}
+
+.halfContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    width: 50%;
+
+    gap: 40px;
+
+    padding: 20px 40px;
+}
+
+.verContainer {
+    display: flex;
+    flex-direction: column;
+    
+    width: 100%;
+
+    gap: 5px;
+}
+
+.halfVerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    width: 100%;
+
+    gap: 10px;
+}
+
+.horContainer {
+    display: flex;
+
+    width: 100%;
+
+    gap: 10px;
+}
