@@ -25,9 +25,14 @@ function ChangeUsername() {
           Authorization: `Token ${auth_token}`
         }
       })
+
+      alert('Логин успешно изменен')
     }
     catch (error) {
-      console.log(error)
+      if (error.response.data.current_password)
+        alert('Неправильный пароль')
+      if (error.response.data.new_username)
+        alert(error.response.data.new_username.join('\n'))
     }
   }
 

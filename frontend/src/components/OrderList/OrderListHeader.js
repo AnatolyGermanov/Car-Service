@@ -12,7 +12,7 @@ function OrderListHeader() {
             <Th>Дата заявки</Th>
             <Th>Причина обращения</Th>
             <Th>Статус заявки</Th>
-            {/* <Th>Документы</Th> */}
+            <Th>Документы</Th>
         </Tr>
     </thead>
   )

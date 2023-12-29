@@ -16,20 +16,25 @@ function ChangePassword() {
         e.preventDefault()
 
         try {
-        const auth_token = localStorage.getItem('auth_token')
-        await axios.post(`http://127.0.0.1:8000/api/v1/auth/users/set_password/`, {
-            new_password: new_passwordRef.current.value,
-            re_new_password: re_new_passwordRef.current.value,
-            current_password: old_passwordRef.current.value
-        },
-        {
-            headers: {
-            Authorization: `Token ${auth_token}`
-            }
-        })
+            const auth_token = localStorage.getItem('auth_token')
+            await axios.post(`http://127.0.0.1:8000/api/v1/auth/users/set_password/`, {
+                new_password: new_passwordRef.current.value,
+                re_new_password: re_new_passwordRef.current.value,
+                current_password: old_passwordRef.current.value
+            },
+            {
+                headers: {
+                Authorization: `Token ${auth_token}`
+                }
+            })
+            alert('Пароль успешно изменен')
         }
         catch (error) {
-            console.log(error.response.data.new_password)
+            if (error.response.data.current_password)
+                alert('Неправильный текущий пароль')
+            if (error.response.data.new_password)
+                alert(error.response.data.new_password.join('\n'))
+            console.log(error.response.data)
         }
     }
 

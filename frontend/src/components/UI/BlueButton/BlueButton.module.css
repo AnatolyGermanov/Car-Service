@@ -1,0 +1,12 @@
+.BlueButton {
+    padding: 10px 20px;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: #007DB3;
+
+    color: #ffffff;
+
+    cursor: pointer;
+}

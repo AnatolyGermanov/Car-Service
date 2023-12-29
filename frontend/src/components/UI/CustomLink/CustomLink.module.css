@@ -1,0 +1,12 @@
+.link {
+    position: relative;
+
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.link:hover {
+    text-decoration: underline solid ;
+}

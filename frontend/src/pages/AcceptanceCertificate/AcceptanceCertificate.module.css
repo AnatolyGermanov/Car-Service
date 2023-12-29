@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    width: 100%;
+    padding: 20px 40px;
+    gap: 20px;
+}
+
+.smallContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+
+    width: 100%;
+}
+
+.smallContainer p {
+    color: #fff;
+}
+
+.innerContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

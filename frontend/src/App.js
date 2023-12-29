@@ -8,6 +8,8 @@ import Services from './pages/Services/Services';
 import Profile from './pages/Profile/Profile';
 import Orders from './pages/Orders/Orders';
 import Clients from './pages/Clients/Clients';
+import PurchaseOrder from './pages/PurchaseOrder/PurchaseOrder';
+import AcceptanceCertificate from './pages/AcceptanceCertificate/AcceptanceCertificate';
 
 import AuthProvider from './hoc/AuthProvider';
 import RequireAuth from './hoc/RequireAuth';
@@ -36,6 +38,14 @@ const router = createBrowserRouter([
   {
     path: '/clients',
     element: <RequireAuth><Clients /></RequireAuth>
+  },
+  {
+    path: '/PurchaseOrder/:doc_id',
+    element: <RequireAuth><PurchaseOrder /></RequireAuth>
+  },
+  {
+    path: '/AcceptanceCertificate/:doc_id',
+    element: <RequireAuth><AcceptanceCertificate /></RequireAuth>
   }
 ]);
 

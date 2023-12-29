@@ -78,7 +78,7 @@ function NewOrderForm({setNewOrderModalVisible}) {
             setNewOrderModalVisible(false);
         } 
         catch (error) {
-            console.log(error)
+            alert('Возникла ошибка при создании заявки. Повторите ещё раз')
         }
 
     }
@@ -86,15 +86,15 @@ function NewOrderForm({setNewOrderModalVisible}) {
     return (
         <Form onSubmit={newOrder}>
             <div className={styles.verContainer}>
-                <Label htmlFor='VIN'>VIN</Label>
+                <Label htmlFor='VIN'>VIN*</Label>
                 <Input onBlur={getCar} id='VIN' type='text' placeholder='VIN' required ref={VINRef} />
             </div>
             <div className={styles.verContainer}>
-                <Label htmlFor='car_model'>Марка и модель автомобиля</Label>
+                <Label htmlFor='car_model'>Марка и модель автомобиля*</Label>
                 <Input id='car_model' type='text' placeholder='Марка и модель автомобиля' required ref={car_modelRef} />
             </div>
             <div className={styles.verContainer}>
-                <Label htmlFor='release_date'>Год выпуска</Label>
+                <Label htmlFor='release_date'>Год выпуска*</Label>
                 <Input id='release_date' type='date' placeholder='Год выпуска' required ref={release_dateRef} />
             </div>
             <div className={styles.verContainer}>
@@ -103,11 +103,11 @@ function NewOrderForm({setNewOrderModalVisible}) {
             </div>
             <div className={styles.horContainer}>
                 <div className={styles.verContainer}>
-                    <Label htmlFor='car_number'>Гос. №</Label>
+                    <Label htmlFor='car_number'>Гос. №*</Label>
                     <Input id='car_number' type='text' placeholder='Гос. №' required ref={car_numberRef} />
                 </div>
                 <div className={styles.verContainer}>
-                    <Label htmlFor='mileage'>Пробег</Label>
+                    <Label htmlFor='mileage'>Пробег*</Label>
                     <Input id='mileage' type='number' min='0' placeholder='Пробег' required ref={mileageRef} />
                 </div>
             </div>

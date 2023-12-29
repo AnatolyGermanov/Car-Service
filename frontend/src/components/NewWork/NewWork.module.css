@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    gap: 20px;
+
+    padding: 20px;
+
+    background-color: #1f1f1f;
+}
+
+.newOrderHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+}
+
+.newOrderHeader span {
+    color: #B36800;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.newOrderHeader img {
+    cursor: pointer;
+}

@@ -54,10 +54,10 @@ class Document(models.Model):
     order = models.ForeignKey('Order', on_delete=models.PROTECT)
 
     class Meta:
-        unique_together = ('doc_num', 'doc_type')
+        unique_together = ('doc_type', 'order')
 
     def __str__(self):
-        return str(self.doc_num)
+        return f'{self.doc_num} {self.doc_type}'
 
 
 class CarPackage(models.Model):

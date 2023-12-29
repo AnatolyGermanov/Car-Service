@@ -31,7 +31,7 @@ function SignOn() {
       navigate('/profile')
     }
     catch (error) {
-      console.log('Неправильный логин или пароль')
+      alert('Неправильный логин или пароль')
     }
     
   }

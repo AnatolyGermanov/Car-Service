@@ -22,9 +22,14 @@ function SignUp() {
         password: passwordRef.current.value,
         re_password: re_passwordRef.current.value
       })
+
+      alert('Вы успешно зарегистрировались')
     }
     catch (error) {
-      console.log(error.response.data)
+      if (error.response.data.username)
+        alert(error.response.data.username.join('\n'))
+      if (error.response.data.password)
+        alert(error.response.data.password.join('\n'))
     }
   }
 

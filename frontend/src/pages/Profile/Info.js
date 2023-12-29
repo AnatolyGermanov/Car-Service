@@ -31,9 +31,11 @@ function Info({user}) {
           Authorization: `Token ${auth_token}`
         }
       })
+
+      alert('Данные успешно изменены')
     }
     catch (error) {
-      console.log(error)
+      alert('Возникла ошибка при изменении данных. Повторите ещё раз')
     }
   }
 
@@ -41,11 +43,11 @@ function Info({user}) {
     <form onSubmit={changeInfo} className={styles.halfVerContainer}>
           <div className={styles.horContainer}>
             <div className={styles.verContainer}>
-                <Label htmlFor='lastname'>Фамилия</Label>
+                <Label htmlFor='lastname'>Фамилия*</Label>
                 <Input id='lastname' type='text' placeholder='Фамилия' required defaultValue={user?.last_name || ''} ref={lastnameRef}/>
             </div>
             <div className={styles.verContainer}>
-                <Label htmlFor='firstname'>Имя</Label>
+                <Label htmlFor='firstname'>Имя*</Label>
                 <Input id='firstname' type='text' placeholder='Имя' required defaultValue={user?.first_name || ''} ref={firstnameRef} />
             </div>
             <div className={styles.verContainer}>
@@ -54,7 +56,7 @@ function Info({user}) {
             </div>
           </div>
           <div className={styles.verContainer}>
-              <Label htmlFor='phone_number'>Номер телефона</Label>
+              <Label htmlFor='phone_number'>Номер телефона*</Label>
               <Input id='phone_number' type='tel' placeholder='Номер телефона' minLength='11' maxLength='11' pattern='^8\d{10}$' title='Формат номера: 8xxxxxxxxxx' required autoComplete='tel' defaultValue={user?.phone_number || ''} ref={phone_numberRef} />
           </div>
           <div className={styles.verContainer}>
