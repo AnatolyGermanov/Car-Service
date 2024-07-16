@@ -10,9 +10,9 @@
 
 ### Backend
 
--Django
--Django REST Framework
--Djoser
+- Django
+- Django REST Framework
+- Djoser
 
 ### Frontend
 
